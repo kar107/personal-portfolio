@@ -39,10 +39,9 @@
         color: rgb(234, 115, 240);
         font-size: 1.01rem;
       }
-      @font-face{
+      @font-face {
         font-family: chup;
         src: url(go3v2.ttf);
-
       }
       .leftnav {
         justify-content: center;
@@ -63,21 +62,18 @@
       .left {
         font-size: 2.3rem;
       }
-      .left .btn{
-        padding: 12px ;
-        background-color:rgb(133, 39, 133);
+      .left .btn {
+        padding: 12px;
+        background-color: rgb(133, 39, 133);
         border: solid white;
         color: white;
         border-radius: 10px;
-
       }
-      .left .btn:hover{
+      .left .btn:hover {
         padding: 15px;
-
       }
 
-      .left .button
-      {
+      .left .button {
         width: 400px;
         height: 100px;
         padding-top: 20px;
@@ -144,9 +140,97 @@
         color: gray;
         font-size: 9px;
       }
+      #box {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+
+        justify-content: center;
+        box-sizing: border-box;
+        perspective: 500px;
+      }
+
+      #box .box1,
+      .box2,
+      .box3,
+      .box4 {
+        height: 200px;
+        width: 100px;
+        background: red;
+        border: 0px solid black;
+        position: absolute;
+        z-index: 1;
+
+        margin: calc(-70px);
+        box-shadow: 0 0 10px 8px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+      #box .box1 {
+        top: 50%;
+        left: 50%;
+        background: rgba(97, 215, 97, 0.3);
+        z-index: 2;
+      }
+      #box .box2 {
+        top: 50%;
+        left: 55%;
+        z-index: 2;
+        background: rgba(34, 7, 145, 0.92);
+      }
+      #box .box3 {
+        top: 50%;
+        left: 60%;
+        z-index: 3;
+        background: rgba(223, 57, 11, 0.747);
+      }
+      #box .box4 {
+        top: 50%;
+        left: 65%;
+        background: rgba(249, 168, 17, 0.744);
+        z-index: 4;
+      }
+
+      #box .box1:hover {
+        height: 90%;
+        width: 200px;
+        top: 20%;
+
+        z-index: 5;
+        transform: rotateY(360deg);
+      
+      }
+      
+      
+      #box .box2:hover {
+        height: 90%;
+        width: 200px;
+        top: 20%;
+
+        z-index: 5;
+        transform: rotateY(360deg);
+
+      }
+      #box .box3:hover {
+        height: 90%;
+        width: 200px;
+        top: 20%;
+
+        z-index: 5;
+        transform: rotateY(360deg);
+      }
+      #box .box4:hover {
+        height: 90%;
+        width: 200px;
+        top: 20%;
+
+        z-index: 5;
+        transform: rotateY(360deg);
+      }
       footer {
         width: 100%;
-
         background-color: rgb(6, 6, 69);
       }
       footer .footer {
@@ -170,9 +254,7 @@
         color: gray;
         padding: 12px 0;
       }
-
-    
-
+      
     </style>
   </head>
   <body>
@@ -201,7 +283,6 @@
             <button class="btn">Visit Site</button>
           </div>
         </div>
-      
 
         <div class="right">
           <img src="pg.png" alt="" />
@@ -264,6 +345,13 @@
           </div>
         </div>
       </section>
+      <hr />
+      <div id="box">
+        <div class="box1"><h2>html</h2></div>
+        <div class="box2"><h2>html</h2></div>
+        <div class="box3"><h2>html</h2></div>
+        <div class="box4"><h2>html</h2></div>
+      </div>
     </main>
     <footer>
       <div class="footer">
